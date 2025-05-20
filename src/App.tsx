@@ -1,17 +1,14 @@
-// import { useState } from "react";
-import "./index.css";
+import { Button } from "@/components/ui/button";
+import AnimatedBackground from "./components/AnimatedBackground";
+
 function App() {
   return (
-    <>
-      <div className="flex items-center justify-center h-screen">
-        <a
-          href="https://example.com"
-          className="text-center font-bold text-blue-500 hover:underline"
-        >
-          Hello World
-        </a>
+    <div>
+      <AnimatedBackground />
+      <div className="flex flex-col items-center justify-center min-h-svh">
+        <Button>Click me</Button>
       </div>
-    </>
+    </div>
   );
 }
 
