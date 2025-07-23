@@ -9,6 +9,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { List } from "lucide-react";
 
 const components = [
   {
@@ -61,28 +62,21 @@ export default function NavigationMenuDemo() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>My Work</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                <li className="row-span-3">
-                  <NavigationMenuLink asChild>
-                    <a
-                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                      href="/"
-                    >
-                      <p className="text-sm leading-tight text-muted-foreground">
-                        Here are some of my projects and blogs.
-                      </p>
-                    </a>
-                  </NavigationMenuLink>
-                </li>
-                {components.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
-                  </ListItem>
-                ))}
+              {/* <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <ListItem href="/" title="Projects">
+                  Here are some of my projects.
+                </ListItem>
+                <ListItem href="/blogs" title="Blogs">
+                  Here are some of my blogs.
+                </ListItem>
+              </ul> */}
+              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
+                <ListItem href="/" title="Projects">
+                  Here are some of my projects.
+                </ListItem>
+                <ListItem href="/blogs" title="Blogs">
+                  Here are some of my blogs.
+                </ListItem>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
