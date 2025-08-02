@@ -9,22 +9,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { List } from "lucide-react";
-
-const components = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-];
 
 export default function NavigationMenuDemo() {
   return (
@@ -50,10 +34,10 @@ export default function NavigationMenuDemo() {
                     </a>
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="test." title="Introduction">
+                <ListItem href="#about" title="Introduction">
                   Learn more about me.
                 </ListItem>
-                <ListItem href="/testpage" title="Contact Me">
+                <ListItem href="#contact" title="Contact Me">
                   Contact me.
                 </ListItem>
               </ul>
@@ -62,16 +46,8 @@ export default function NavigationMenuDemo() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>My Work</NavigationMenuTrigger>
             <NavigationMenuContent>
-              {/* <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                <ListItem href="/" title="Projects">
-                  Here are some of my projects.
-                </ListItem>
-                <ListItem href="/blogs" title="Blogs">
-                  Here are some of my blogs.
-                </ListItem>
-              </ul> */}
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
-                <ListItem href="/" title="Projects">
+                <ListItem href="#projects" title="Projects">
                   Here are some of my projects.
                 </ListItem>
                 <ListItem href="/blogs" title="Blogs">
@@ -82,7 +58,7 @@ export default function NavigationMenuDemo() {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="/"
+              href="#welcome"
               className={navigationMenuTriggerStyle()}
             >
               Home
