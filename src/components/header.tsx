@@ -50,7 +50,7 @@ export default function NavigationMenuDemo() {
                 <ListItem href="#projects" title="Projects">
                   Here are some of my projects.
                 </ListItem>
-                <ListItem href="/blogs" title="Blogs">
+                <ListItem href="#blog" title="Blogs">
                   Here are some of my blogs.
                 </ListItem>
               </ul>

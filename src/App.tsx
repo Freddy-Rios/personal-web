@@ -2,6 +2,7 @@ import WelcomeSection from "./components/welcomeSection";
 import ProjectSection from "./components/projectSection";
 import AboutSection from "./components/aboutSection";
 import ContactSection from "./components/contactSection";
+import BlogSection from "./components/blogSection";
 
 function App() {
   return (
@@ -27,6 +28,13 @@ function App() {
           className="min-h-screen flex items-center justify-center"
         >
           <ProjectSection />
+        </section>
+
+        <section
+          id="blog"
+          className="min-h-screen flex items-center justify-center bg-white"
+        >
+          <BlogSection />
         </section>
 
         <section
