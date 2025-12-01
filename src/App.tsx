@@ -30,12 +30,12 @@ function App() {
           <ProjectSection />
         </section>
 
-        <section
+        {/* <section
           id="blog"
           className="min-h-screen flex items-center justify-center bg-white"
         >
           <BlogSection />
-        </section>
+        </section> */}
 
         <section
           id="contact"
