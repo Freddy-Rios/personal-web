@@ -2,13 +2,13 @@ import { Project } from "@/components/projects";
 
 export const projects: Project[] = [
   {
-    title: "Galaga Rip",
+    title: "New Galaga",
     description:
-      "A roguelike game built in MonoGame with enemies, combat, and roundbased gameplay.",
+      "A fast-paced, arcade-style shooter built from scratch during a solo 48-hour challenge. Developed entirely without AI assistance to test core software design, this project focuses on clean game-loop architecture, real-time input handling, and rapid prototyping using the MonoGame framework.",
     media: {
       type: "video",
-      src: "/videos/dungeon-slime.mp4",
-      poster: "/images/dungeon-slime-poster.jpg",
+      src: "/videos/Galaga.mov",
+      poster: "",
     },
   },
 
